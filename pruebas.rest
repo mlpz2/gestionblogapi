@@ -1,0 +1,7 @@
+@url = http://localhost:3000 
+
+GET {{url}}
+###  Send Get Request to autores
+GET {{url}}/api/autores
+###  Send Get Request to posts
+GET {{url}}/api/posts

@@ -1,16 +1,21 @@
-clearTimeoutonst express = require('express')
-
-const bodyParser = require('body-parser');
-
-const cors = require('cors');
+const express = require('express');
 
 
 
-const app = express();
-
-const port = 3000;
+const server = express();
 
 
-app.use(cors());
 
-app.use(bodyParser.json());
+const rutasAutores = require('./routes/autores.routes');
+
+server.use('/api/autores', rutasAutores)
+
+
+
+const rutasPosts = require('./routes/posts.routes');
+
+server.use('/api/posts', rutasPosts)
+
+
+
+server.listen(3000, () => console.log('Server running'));
