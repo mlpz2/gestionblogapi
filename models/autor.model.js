@@ -1,8 +1,6 @@
 const autor = {
-
-	id: number,
-	nombre: String,
-	email: String,
-	imagen: String,
-
+    id: number | any,
+    nombre: String,
+    imagen: String,
+    email: String
 }
