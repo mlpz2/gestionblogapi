@@ -1,3 +1,4 @@
+
 const posts = {
 
 	id: number,
