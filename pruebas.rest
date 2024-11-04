@@ -13,7 +13,7 @@ Content-Type: application/json
     "email": "shakespeare@gmail.com"
 }
 ###  Send Delete Request to autores
-DELETE {{url}}/api/autores/delete?id=2
+DELETE {{url}}/api/autores/delete?id=6
 
 ### Send Get Request to posts
 GET {{url}}/api/posts
@@ -24,7 +24,7 @@ Content-Type: application/json
 {
     "titulo": "Titulo post 2",
     "descripcion": "Contenido del post ",
-    "fecha_creacion": "2024-10-08 09:19:00",
+    "fecha_de_creacion": "2024-10-01",
     "categoria": "Categoría del post 2",
     "autores_id": 1
 }

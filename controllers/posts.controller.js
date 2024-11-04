@@ -14,7 +14,7 @@ exports.getPosts = (request, response) => {
 exports.createPost = (request, response) => {
     let sql = 'insert into posts(titulo, descripcion, fecha_de_creacion, categoria, autores_id) ';
     sql = sql + 'values(\'' + request.body.titulo + '\', \'' + request.body.descripcion + '\', \'' 
-    + request.body.fecha_creacion + '\', \'' + request.body.categoria + '\', ' + request.body.autores_id + ')';
+    + request.body.fecha_de_creacion + '\', \'' + request.body.categoria + '\', \'' + request.body.autores_id + '\')';
     db.query(sql, (error, resultado) => {
         if (error) {
             throw error;

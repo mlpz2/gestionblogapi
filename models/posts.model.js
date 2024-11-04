@@ -4,5 +4,5 @@ const posts = {
     descripcion: String,
     fecha_de_creacion: String,
     categoria: String,
-    autor_id: number
+    autores_id: number
 }
