@@ -13,7 +13,7 @@ Content-Type: application/json
     "email": "shakespeare@gmail.com"
 }
 ###  Send Delete Request to autores
-DELETE {{url}}/api/autores/delete?id=6
+DELETE {{url}}/api/autores/delete?id=3
 
 ### Send Get Request to posts
 GET {{url}}/api/posts
@@ -24,9 +24,41 @@ Content-Type: application/json
 {
     "titulo": "Titulo post 2",
     "descripcion": "Contenido del post ",
-    "fecha_de_creacion": "2024-10-01",
+    "fecha_creacion": "2024-10-08 09:19:00",
     "categoria": "Categoría del post 2",
     "autores_id": 1
 }
 ###  Send Delete Request to autores
 DELETE {{url}}/api/posts/delete?id=2
+
+###  Send Put Request to post
+PATCH {{url}}/api/posts/update
+Content-Type: application/json
+
+{
+    "id": 1,
+    "titulo": "Titulo post 1",
+    "descripcion": "Contenido del post ",
+    "fecha_creacion": "2024-10-08 09:19:00",
+    "categoria": "Categoría del post 2",
+    "autores_id": 1
+}
+###  Send Put Request to autores
+PUT {{url}}/api/autores/update
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nombre": "William Shakespeare",
+    "imagen": "url de imagen7",
+    "email": "shakespeare@gmail.com"
+}
+
+### Get posts from author id
+GET {{url}}/api/posts/getPostFromAuthorId?id=1
+
+### Get posts from author name or email equal
+GET {{url}}/api/posts/getPostFromAuthorNameOrEmailEqual?filter=William Shakespeare
+
+### Get posts from author name or email like
+GET {{url}}/api/posts/getPostFromAuthorNameOrEmailLike?filter=Shakespeare

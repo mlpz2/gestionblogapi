@@ -8,7 +8,7 @@ exports.getAutores = (request, response) => {
         } else {
             response.json(resultado);
         }
-    })
+    });
 };
 
 exports.createAutor = (request, response) => {
@@ -21,7 +21,7 @@ exports.createAutor = (request, response) => {
         } else {
             response.json(resultado);
         }
-    })
+    });
 };
 
 exports.deleteAutor = (request, response) => {
@@ -32,5 +32,17 @@ exports.deleteAutor = (request, response) => {
         } else {
             response.json(resultado);
         }
-    })
+    });
+};
+
+exports.updateAutor = (request, response) => {
+    let sql = 'update autores set nombre = \'' + request.body.nombre + '\', imagen = \'' + request.body.imagen + '\', email = \'' 
+    + request.body.email + '\' where id = ' + request.body.id;
+    db.query(sql, (error, resultado) => {
+        if (error) {
+            throw error;
+        } else {
+            response.json(resultado);
+        }
+    });
 };
