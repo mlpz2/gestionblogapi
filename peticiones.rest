@@ -8,10 +8,11 @@ POST {{url}}/api/autores/create
 Content-Type: application/json
 
 {
-    "nombre": "William Shakespeare",
-    "imagen": "url de imagen",
-    "email": "shakespeare@gmail.com"
+    "nombre": "Jorge Luis Borges",
+    "imagen": "https://ejemplo.com/borges.jpg",
+    "email": "jorge@ejemplo.com"
 }
+
 ###  Send Delete Request to autores
 DELETE {{url}}/api/autores/delete?id=3
 
@@ -22,36 +23,35 @@ POST {{url}}/api/posts/create
 Content-Type: application/json
 
 {
-    "titulo": "Titulo post 2",
-    "descripcion": "Contenido del post ",
-    "fecha_creacion": "2024-10-08 09:19:00",
-    "categoria": "Categoría del post 2",
-    "autores_id": 1
+    "titulo": "El Laberinto Infinito",
+    "descripcion": "Cuento filosófico de Jorge Luis Borges.",
+    "fecha_creacion": "1970-08-01",
+    "categoria": "Filosofía",
+    "autores_id": 7
 }
 ###  Send Delete Request to autores
-DELETE {{url}}/api/posts/delete?id=2
+DELETE {{url}}/api/posts/delete?id=3
 
 ###  Send Put Request to post
 PATCH {{url}}/api/posts/update
 Content-Type: application/json
 
 {
-    "id": 1,
-    "titulo": "Titulo post 1",
-    "descripcion": "Contenido del post ",
-    "fecha_creacion": "2024-10-08 09:19:00",
-    "categoria": "Categoría del post 2",
-    "autores_id": 1
+    "titulo": "El Laberinto Infinito",
+    "descripcion": "Cuento filosófico sobre la complejidad de la realidad y el misterio de la identidad humana de Jorge Luis Borges.",
+    "fecha_creacion": "1970-08-01",
+    "categoria": "Filosofía",
+    "autores_id": 7
 }
 ###  Send Put Request to autores
 PUT {{url}}/api/autores/update
 Content-Type: application/json
-
+('Jane Austen', 'jane@ejemplo.com', 'https://ejemplo.com/austen.jpg');
 {
-    "id": 1,
-    "nombre": "William Shakespeare",
-    "imagen": "url de imagen7",
-    "email": "shakespeare@gmail.com"
+    "id": 7,
+    "nombre": "Jane Austen",
+    "imagen": "https://ejemplo.com/austen.jpg",
+    "email": "jane@ejemplo.com"
 }
 
 ### Get posts from author id
