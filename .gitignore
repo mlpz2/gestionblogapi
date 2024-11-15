@@ -1,17 +1,10 @@
-### Angular ###
-## Angular ##
-# compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
-
 # dependencies
 node_modules/
 bower_components/
 
 # IDEs and editors
 .idea/
+.vscode/
 
 # misc
 .sass-cache/
@@ -21,14 +14,12 @@ libpeerconnection.log/
 npm-debug.log
 testem.log
 typings/
-.angular/
-
-# e2e
-e2e/*.js
-e2e/*.map
 
 # System Files
 .DS_Store/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 ### Node ###
 # Logs
@@ -168,3 +159,14 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# CI/CD files
+.travis.yml
+.circleci/
+
+# Documentation files
+docs/
