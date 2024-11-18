@@ -1,16 +1,30 @@
 {
-  "name": "blog-api",
+  "name": "gestion-blog-api",
   "version": "1.0.0",
-  "description": "Blog API",
+  "description": "API RESTful para gestionar un blog con autores y posts",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "M",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlpz2/gestionblogapi.git"
+  },
+  "keywords": [
+    "API",
+    "Express",
+    "MySQL",
+    "Blog"
+  ],
+  "author": "mlpz2",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
     "mysql2": "^3.11.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
