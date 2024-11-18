@@ -169,4 +169,4 @@ docker-compose.yml
 .circleci/
 
 # Documentation files
-docs/
+doc/
