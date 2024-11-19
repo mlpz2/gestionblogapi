@@ -31,7 +31,7 @@ __1. __Crear correctamente la base de datos__ con las tablas necesarias y con to
     * Para recuperar todos los __Posts__ de un __Autor__ desde la `id` del __Autor__: 
 `GET` `http://localhost:3000/api/posts/getPostFromAuthorId?id=<autor_id>`
     * Para recuperar todos los __Posts__ de un __Autor__ utilizando el __filtro__ de búsqueda __`Equal`__ (que se __traduce igual__, que __requiere__ poner la __palabra exacta a buscar__ tal y como está almacenada en la base de datos): 
-`GET` `http://localhost:3000/api/posts/`getPostFromAuthorNameOrEmailEqual?filter=<nombre_o_correo>
+`GET` `http://localhost:3000/api/posts/getPostFromAuthorNameOrEmailEqual?filter=<nombre_o_correo>`
     * Para recuperar todos los __Posts__ de un __Autor__ utilizando el __filtro__ de búsqueda __`Like`__ (que se __traduce como__, que tiene la __ventaja de que no requiere poner la palabra exacta a buscar__): 
 `GET` `http://localhost:3000/api/posts/getPostFromAuthorNameOrEmailLike`
 
